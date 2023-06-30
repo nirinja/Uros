@@ -677,27 +677,15 @@ section {
   background: #fafafa;
 }
 
-#services .icon {
-  position: absolute;
-  top: -36px;
-  left: calc(50% - 36px);
-  transition: 0.2s;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 72px;
-  height: 72px;
-  background: #fcba03;
-}
-
 
 #services .box:hover {
-  background: #fff;
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
   border: 1px solid #fcba03;
+  height: 200px;
+  position: relative;
+  background: #fafafa;
 }
 
 
