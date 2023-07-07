@@ -94,7 +94,7 @@ h6 {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(52, 59, 64, 0.9);
+  background: #343b40e6;
 }
 
 #header #logo h1 {
@@ -122,7 +122,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(52, 59, 64, 0.9);
+  background: #343b40e6;
   height: 70px;
   transition: all 0.5s;
 }
@@ -502,6 +502,16 @@ section {
   color: #999;
 }
 
+.section-header-left .section-title-left {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -558,106 +568,6 @@ section {
   }
 }
 
-/* About Us Section
---------------------------------*/
-#about {
-  background: #fff;
-  padding: 80px 0;
-}
-
-#about .about-container .background {
-  min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
-  margin-bottom: 10px;
-}
-
-#about .about-container .content {
-  background: #fff;
-}
-
-#about .about-container .title {
-  color: #333;
-  font-weight: 700;
-  font-size: 32px;
-}
-
-@media (max-width: 768px) {
-  #about .about-container .title {
-    padding-top: 15px;
-  }
-}
-
-#about .about-container p {
-  line-height: 26px;
-}
-
-#about .about-container p:last-child {
-  margin-bottom: 0;
-}
-
-#about .about-container .icon-box {
-  background: #fff;
-  background-size: cover;
-  padding: 0 0 30px 0;
-}
-
-#about .about-container .icon-box .icon {
-  float: left;
-  background: #fff;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 50%;
-  border: 2px solid #fcba03;
-}
-
-#about .about-container .icon-box .icon i {
-  color: #fcba03;
-  font-size: 24px;
-  line-height: 0;
-}
-
-#about .about-container .icon-box .title {
-  margin-left: 80px;
-  font-weight: 500;
-  margin-bottom: 5px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-#about .about-container .icon-box .title a {
-  color: #111;
-}
-
-#about .about-container .icon-box .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
-}
-
-/* Facts Section
---------------------------------*/
-#facts {
-  background: #f7f7f7;
-  padding: 80px 0 60px 0;
-}
-
-#facts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #fcba03;
-}
-
-#facts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-}
 
 /* Services Section
 --------------------------------*/
@@ -709,33 +619,78 @@ section {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  background: #ebebeb;
+  padding-bottom: 40px;
 }
 
 
 .contactline {
-  color: #666666;
-  padding-bottom: 10px;
+  color: black;
+  padding-bottom: 20px;
+  
+}
+
+.text-reset{
+  padding: 5px;
+  padding-top: 50px;
+}
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding: 0;
+  /* text-align: center;
+  background-color: #fafafa; */
+}
+
+.clients a {
+  width: 50%;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  color: #fafafa;
+}
+
+.clients a:hover {
+  filter: none;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .clients a {
+    width: 40%;
+  }
+
+  footer *{
+    visibility: collapse;
+    height: 0;
+    background: #ebebeb ;
+  }
+
+  #contact {
+    padding-bottom: 0;
+  }
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  background: #f7f7f7;
-  padding: 20px 0;
-  color: #fff;
+footer {
+  background: #3d4e5b;
+  visibility:visible;
+  color: #fafafa ;
   font-size: 14px;
 }
 
 #footer .copyright {
   text-align: center;
-  color: #b3b3b3;
+  color: #fafafa;
 }
 
 #footer .copyright a {
   text-align: center;
-  color: #b3b3b3;
+  color: #fafafa;
 }
 
 #footer .credits {
@@ -743,4 +698,12 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+.col-lg-2{
+  z-index: 2;
+}
+
+.list-inline{
+  display: inline-flex;
 }
